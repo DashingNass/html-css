@@ -17,7 +17,9 @@
 
 @font-face {
     font-family: 'Vremena Grotesk';
-    src: url('/fonts/vremenagroteskbook-webfont.woff') format('woff');
+    src: url('../fonts/vremenagroteskbook-webfont.woff2') format('woff2'),
+         url('../fonts/vremenagroteskbook-webfont.woff') format('woff'),
+         url('../fonts/vremenagroteskbook-webfont.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 
@@ -28,7 +30,9 @@
 
 @font-face {
     font-family: 'Vremena Grotesk';
-    src: url('/fonts/vremenagroteskbookitalic-webfont.woff') format('woff');
+    src: url('../fonts/vremenagroteskbookitalic-webfont.woff2') format('woff2'),
+         url('../fonts/vremenagroteskbookitalic-webfont.woff') format('woff'),
+         url('../fonts/vremenagroteskbookitalic-webfont.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 
@@ -39,7 +43,9 @@
 
 @font-face {
     font-family: 'Vremena Grotesk';
-    src: url('/fonts/vremenagrotesk-webfont.woff') format('woff');
+    src: url('../fonts/vremenagrotesk-webfont.woff2') format('woff2'),
+         url('../fonts/vremenagrotesk-webfont.woff') format('woff'),
+         url('../fonts/vremenagrotesk-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -50,7 +56,9 @@
 
 @font-face {
     font-family: 'Vremena Grotesk';
-    src: url('/fonts/vremenagroteskitalic-webfont.woff') format('woff');
+    src: url('../fonts/vremenagroteskitalic-webfont.woff2') format('woff2'),
+         url('../fonts/vremenagroteskitalic-webfont.woff') format('woff'),
+         url('../fonts/vremenagroteskitalic-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 
@@ -61,7 +69,9 @@
 
 @font-face {
     font-family: 'Vremena Grotesk';
-    src: url('/fonts/vremenagroteskmedium-webfont.woff') format('woff');
+    src: url('../fonts/vremenagroteskmedium-webfont.woff2') format('woff2'),
+         url('../fonts/vremenagroteskmedium-webfont.woff') format('woff'),
+         url('../fonts/vremenagroteskmedium-webfont.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 
@@ -72,7 +82,9 @@
 
 @font-face {
     font-family: 'Vremena Grotesk';
-    src: url('/fonts/vremenagroteskmediumitalic-webfont.woff') format('woff');
+    src: url('../fonts/vremenagroteskmediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/vremenagroteskmediumitalic-webfont.woff') format('woff'),
+         url('../fonts/vremenagroteskmediumitalic-webfont.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 
@@ -83,7 +95,9 @@
 
 @font-face {
     font-family: 'Vremena Grotesk';
-    src: url('/fonts/vremenagroteskbold-webfont.woff') format('woff');
+    src: url('../fonts/vremenagroteskbold-webfont.woff2') format('woff2'),
+         url('../fonts/vremenagroteskbold-webfont.woff') format('woff'),
+         url('../fonts/vremenagroteskbold-webfont.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 
@@ -94,7 +108,9 @@
 
 @font-face {
     font-family: 'Vremena Grotesk';
-    src: url('/fonts/vremenagroteskbolditalic-webfont.woff') format('woff');
+    src: url('../fonts/vremenagroteskbolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/vremenagroteskbolditalic-webfont.woff') format('woff'),
+         url('../fonts/vremenagroteskbolditalic-webfont.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 

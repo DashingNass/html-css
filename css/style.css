@@ -32,17 +32,8 @@ main {
 .main-animated {
     transition-duration: .3s;
     transform: scale(0.98) perspective(1800px) rotateX(20deg) rotateY(-15deg) rotateZ(5deg);
+    box-shadow: 10px 24px 15px 10px rgba(0,0,0,.2), 10px 24px 5px rgba(0,0,0,.2);
 }
-
-/*
-main:hover {
-    background-color: #d62019;
-    box-shadow: 4px 4px 15px rgba(0,0,0,.3);
-    transform: scale(1);
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
-*/
 
 .book {
     background-color: #7a6a4f;
@@ -56,7 +47,6 @@ main:hover {
     height: 30px;
     margin: -5px -4px 0px 4px;
     transform: skewX(20deg) rotateX(-50deg);
-    transition-duration: .3s;
 }
 
 .book2 {
@@ -74,13 +64,8 @@ main:hover {
 .book2-animated {
     right: -8px;
     top: 11px;
-    position: absolute;
-    background-color: #c6b8a1;
-    height: 100%;
     width: 8px;
-    margin: 0px;
     transform: skewY(70deg);
-    transition-duration: .3s;
 }
 
 button.perspective {
@@ -154,7 +139,7 @@ button.perspective {
 /*CIJFERS*/
 
 .cijfer .a, .cijfer .b {
-    fill: #e3dccf !important;
+    fill: #e3dccf;
 }
 
 /*SCHETSEN*/

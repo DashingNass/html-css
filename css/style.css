@@ -1,33 +1,9 @@
+/*-----------------STANDARD STYLING-----------------*/
+
 body {
     background-color: #e3dccf;
     font-family: 'Vremena Grotesk';
 }
-
-main {
-    position: absolute;
-    background-color: #d62019;
-    height: 550px;
-    width: 700px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    box-shadow: 0px 0px 0px rgba(0,0,0,.0);
-    transition-timing-function: ease;
-    transition-duration: .3s;
-    transform: scale(0.98);
-}
-
-/*
-main:hover {
-    background-color: #d62019;
-    box-shadow: 4px 4px 15px rgba(0,0,0,.3);
-    transform: scale(1);
-    transition-duration: .3s;
-    transition-timing-function: ease;
-}
-*/
 
 h1 {
     position: absolute;
@@ -40,56 +16,212 @@ h1 {
     font-weight: 500;
 }
 
-/*SVG KLEUREN*/
-
-.schets1 > svg .a {
-/*    stroke: blue;*/
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 2000;
-/*    animation: dash 30s .3s ease-out;*/
-/*    animation-iteration-count: infinite;*/
-    transition-duration: 5s;
-    transition-delay: .2s;
+main {
+    position: absolute;
+    background-color: #d62019;
+    height: 550px;
+    width: 700px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition-duration: .3s;
 }
 
-.schets1 > svg .b {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 2000;
-/*    animation: dash 30s ease-out;*/
-/*    animation-iteration-count: infinite;*/
-    transition-duration: 5s;
-    transition-delay: 0s;
+.main-animated {
+    transition-duration: .3s;
+    transform: scale(0.98) perspective(1800px) rotateX(20deg) rotateY(-15deg) rotateZ(5deg);
 }
 
-.schets1:hover > svg .a {
-/*    stroke: blue;*/
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-/*    animation: dash 30s .3s ease-out;*/
-/*    animation-iteration-count: infinite;*/
-    transition-duration: 5s;
-    transition-delay: 0s;
-    transition-timing-function: ease-in;
+/*
+main:hover {
+    background-color: #d62019;
+    box-shadow: 4px 4px 15px rgba(0,0,0,.3);
+    transform: scale(1);
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+*/
+
+.book {
+    background-color: #7a6a4f;
+    height: 0px;
+    margin: 0px;
+    transform: perspective(1800px) rotateX(-0deg);
+    transition-duration: .3s;
 }
 
-.schets1:hover > svg .b {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-/*    animation: dash 30s ease-out;*/
-    animation-iteration-count: infinite;
-    transition-duration: 5s;
-    transition-delay: .3s;
-    transition-timing-function: ease-in;
+.book-animated {
+    height: 30px;
+    margin: -5px -4px 0px 4px;
+    transform: skewX(20deg) rotateX(-50deg);
+    transition-duration: .3s;
+}
+
+.book2 {
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    background-color: #c6b8a1;
+    height: 100%;
+    width: 0px;
+    margin: 0px;
+    transform: skewy(0deg);
+    transition-duration: .3s;
+}
+
+.book2-animated {
+    right: -8px;
+    top: 11px;
+    position: absolute;
+    background-color: #c6b8a1;
+    height: 100%;
+    width: 8px;
+    margin: 0px;
+    transform: skewY(70deg);
+    transition-duration: .3s;
+}
+
+button.perspective {
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    border: 0;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-top: -20px;
+}
+
+.theme {
+    display: flex;
+    margin-top: 25px;
+    margin-left: 0px;
+    transition-duration: .3s;
+}
+
+.theme-animated {
+    margin-top: 20px;
+    margin-left: 10px;
+    transition-duration: .3s;
+}
+
+.theme input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.theme span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #426ef4;
+    margin-top: -43px;
+}
+
+.theme label:nth-of-type(1) span {
+    background-color: #d62019;
+}
+
+.theme label:nth-of-type(2) span {
+    background-color: #7bccdf;
+}
+
+.theme label:nth-of-type(3) span {
+    background-color: #ea5103;
+}
+
+.theme label:nth-of-type(4) span {
+    background-color: #1445ad;
+}
+
+.theme .container:hover input ~ .checkmark {
+    box-sizing: border-box;
+    border: 2px solid rgba(0,0,0,.4);
+}
+
+.theme .container input:checked ~ .checkmark {
+    box-sizing: border-box;
+    border: 2px solid rgba(0,0,0,1);
+}
+
+/*-----------------SVG ANIMATIES-----------------*/
+
+/*CIJFERS*/
+
+.cijfer .a, .cijfer .b {
+    fill: #e3dccf !important;
 }
 
 /*SCHETSEN*/
 
+.schets path.a, .schets path.b {
+    fill: none;
+    stroke: #e3dccf;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.schets .a {
+    stroke-width: 0.75px;
+}
+
+.schets > svg .a, .notities > svg .a {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 2000;
+    transition-duration: .5s;
+}
+
+.schets:hover > svg .a, .notities:hover > svg .a {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+
+/*NOTITIES*/
+
+.notities .a, .notities .b {
+    fill: none;
+    stroke: #e3dccf;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.notities .a {
+    stroke-width: 0.75px;
+}
+
+.notities:hover > svg .a {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 2000;
+/*    animation: dash 30s ease-out;*/
+    transition-duration: 2s;
+/*    animation-iteration-count: infinite;*/
+}
+
+.notities:hover > svg .a {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+/*    animation: dash 30s ease-out;*/
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+/*    animation-iteration-count: infinite;*/
+}
+
+/*GRID*/
+
 main div.grid {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 15% 25% 25% 1fr;
+    grid-template-columns: 15% 50% 1fr;
     margin-top: 70px;
-    height: calc(100% - 60px);
+    height: calc(100% - 70px);
 }
 
 .cijfer {
@@ -116,11 +248,11 @@ main div.grid {
 
 .schets svg {
     width: 100%;
-    max-width: 130px;
+/*    max-width: 130px;*/
 }
 
 .notities {
-    grid-area: 1 / col3-start / col3-end / 4;
+    grid-area: 1 / col3-start / col3-end / 3;
     margin-left: -25px
 }
 
@@ -128,9 +260,12 @@ main div.grid {
     height: 100%;
 }
 
-/*
 
+/*
 @keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
   to {
     stroke-dashoffset: 0;
   }

@@ -32,7 +32,7 @@ main {
 .main-animated {
     transition-duration: .3s;
     transform: scale(0.98) perspective(1800px) rotateX(20deg) rotateY(-15deg) rotateZ(5deg);
-    box-shadow: 10px 24px 15px 10px rgba(0,0,0,.2), 10px 24px 5px rgba(0,0,0,.2);
+    box-shadow: 12px 26px 15px 10px rgba(0,0,0,.2), 12px 26px 5px rgba(0,0,0,.2);
 }
 
 .book {
@@ -45,7 +45,7 @@ main {
 
 .book-animated {
     height: 30px;
-    margin: -5px -4px 0px 4px;
+    margin: -6px -4px 0px 6px;
     transform: skewX(20deg) rotateX(-50deg);
 }
 
@@ -62,10 +62,35 @@ main {
 }
 
 .book2-animated {
-    right: -8px;
-    top: 11px;
-    width: 8px;
-    transform: skewY(70deg);
+    right: -7px;
+    top: 9px;
+    width: 7px;
+    transform: skewY(72deg);
+}
+
+.book3 {
+    position: absolute;
+    top: 20px;
+    left: 7px;
+    height: 552px;
+    width: 703px;
+    z-index: -1;
+    background-color: #d62019;
+}
+
+.book4 {
+    position: absolute;
+    left: 4px;
+    bottom: -21px;
+    height: 22.5px;
+    width: 6px;
+    z-index: 1;
+    background-color: #d62019;
+    transform: skewX(20deg);
+}
+
+button {
+    z-index: 99999;
 }
 
 button.perspective {
@@ -88,7 +113,7 @@ button.perspective {
 }
 
 .theme-animated {
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 10px;
     transition-duration: .3s;
 }

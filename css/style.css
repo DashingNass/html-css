@@ -14,6 +14,7 @@ h1 {
     text-align: center;
     letter-spacing: .06em;
     font-weight: 500;
+    z-index: 2;
 }
 
 main {
@@ -30,12 +31,28 @@ main {
 }
 
 .main-animated {
-    transition-duration: .3s;
     transform: scale(0.98) perspective(1800px) rotateX(20deg) rotateY(-15deg) rotateZ(5deg);
     box-shadow: 12px 26px 15px 10px rgba(0,0,0,.2), 12px 26px 5px rgba(0,0,0,.2);
 }
 
-.book {
+.bovenkant {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 550px;
+    width: 700px;
+    z-index: 1;
+    background-color: #d62019;
+    transition-duration: .3s;
+}
+
+.bovenkant-animated {
+    height: 552px;
+    width: 703px;
+    filter: brightness(110%);
+}
+
+.binnenkant {
     background-color: #7a6a4f;
     height: 0px;
     margin: 0px;
@@ -43,13 +60,13 @@ main {
     transition-duration: .3s;
 }
 
-.book-animated {
+.binnenkant-animated {
     height: 30px;
     margin: -6px -4px 0px 6px;
     transform: skewX(20deg) rotateX(-50deg);
 }
 
-.book2 {
+.binnenkant-2 {
     right: 0px;
     top: 0px;
     position: absolute;
@@ -61,14 +78,25 @@ main {
     transition-duration: .3s;
 }
 
-.book2-animated {
+.binnenkant-2-animated {
     right: -7px;
     top: 9px;
     width: 7px;
     transform: skewY(72deg);
 }
 
-.book3 {
+.onderkant {
+    position: absolute;
+    top: 0px;
+    height: 550px;
+    width: 700px;
+    z-index: -1;
+    background-color: #d62019;
+    filter: brightness(70%);
+    transition-duration: .3s;
+}
+
+.onderkant-animated {
     position: absolute;
     top: 20px;
     left: 7px;
@@ -78,19 +106,25 @@ main {
     background-color: #d62019;
 }
 
-.book4 {
+.rug {
     position: absolute;
-    left: 4px;
-    bottom: -21px;
-    height: 22.5px;
-    width: 6px;
-    z-index: 1;
+    left: 0px;
+    bottom: 0px;
+    height: 0px;
+    width: 3.5px;
     background-color: #d62019;
-    transform: skewX(20deg);
+    transform: skewX(0deg);
+    filter: brightness(70%);
+    transition-duration: .3s;
 }
 
-button {
-    z-index: 99999;
+.rug-animated {
+    left: 3.5px;
+    bottom: -22px;
+    height: 20px;
+    width: 5px;
+    background-color: #d62019;
+    transform: skewX(20deg);
 }
 
 button.perspective {
@@ -129,7 +163,6 @@ button.perspective {
     display: block;
     width: 40px;
     height: 40px;
-    background-color: #426ef4;
     margin-top: -43px;
 }
 
@@ -146,7 +179,7 @@ button.perspective {
 }
 
 .theme label:nth-of-type(4) span {
-    background-color: #1445ad;
+    background-color: #0e3587;
 }
 
 .theme .container:hover input ~ .checkmark {
@@ -161,6 +194,14 @@ button.perspective {
 
 /*-----------------SVG ANIMATIES-----------------*/
 
+.cijfer, .notities {
+    z-index: 2;
+}
+
+.container {
+    z-index: 3;
+}
+
 /*CIJFERS*/
 
 .cijfer .a, .cijfer .b {
@@ -168,6 +209,7 @@ button.perspective {
 }
 
 /*SCHETSEN*/
+
 
 .schets path.a, .schets path.b {
     fill: none;
@@ -180,13 +222,13 @@ button.perspective {
     stroke-width: 0.75px;
 }
 
-.schets > svg .a, .notities > svg .a {
+.notities > svg .a {
     stroke-dasharray: 1000;
     stroke-dashoffset: 2000;
     transition-duration: .5s;
 }
 
-.schets:hover > svg .a, .notities:hover > svg .a {
+.notities:hover > svg .a {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     transition-duration: 2s;
@@ -210,18 +252,14 @@ button.perspective {
 .notities:hover > svg .a {
     stroke-dasharray: 1000;
     stroke-dashoffset: 2000;
-/*    animation: dash 30s ease-out;*/
     transition-duration: 2s;
-/*    animation-iteration-count: infinite;*/
 }
 
 .notities:hover > svg .a {
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
-/*    animation: dash 30s ease-out;*/
     transition-duration: 2s;
     transition-timing-function: ease-in;
-/*    animation-iteration-count: infinite;*/
 }
 
 /*GRID*/
@@ -232,6 +270,7 @@ main div.grid {
     grid-template-columns: 15% 50% 1fr;
     margin-top: 70px;
     height: calc(100% - 70px);
+    z-index: 1;
 }
 
 .cijfer {
@@ -245,20 +284,17 @@ main div.grid {
     margin-right: 30px;
 }
 
-.schets {
+.container {
     justify-self: start;
     align-self: center;
-    transition-duration: .3s;
 }
 
-.schets:hover {
-    transform: scale(1.1);
+.schets {
     transition-duration: .3s;
 }
 
 .schets svg {
     width: 100%;
-/*    max-width: 130px;*/
 }
 
 .notities {
@@ -270,14 +306,47 @@ main div.grid {
     height: 100%;
 }
 
+/*CARDS*/
 
-/*
-@keyframes dash {
-    from {
-        stroke-dashoffset: 1000;
-    }
-  to {
-    stroke-dashoffset: 0;
-  }
+.card .schets {
+    padding: 0px;
+    filter: brightness(100%);
+    transform: translateZ(0px);
+    z-index: 3;
+    box-shadow: 0px 0px 0px rgba(0,0,0,.3), 0px 0px 0px rgba(0,0,0,.3);
 }
-*/
+
+.grid .container input:checked ~ .card .schets {
+    transform: scale(1.2) translate(0px, -20px);
+    transition-duration: .3s;
+    background-color: black;
+    padding: 12px;
+    filter: brightness(105%);
+    box-shadow: 5px 20px 20px rgba(0,0,0,.2);
+}
+
+.grid .container input:checked ~ .card-animated .schets {
+    transform: scale(1.2) translate(-5px, -45px);
+    filter: brightness(115%);
+    box-shadow: 5px 45px 20px rgba(0,0,0,.2);
+}
+
+.grid .container input:checked ~ .card .schets svg .a {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition-duration: 2s;
+}
+
+.card .schets svg .a {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 2000;
+    transition-duration: 2s;
+}
+
+.grid .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}

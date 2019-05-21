@@ -134,6 +134,13 @@ function cardColor() {
     }
 }
 
+window.addEventListener("keypress", function(x) {
+    if (x.keyCode == "32")
+    perspective();
+    checkButton();
+});
+
+
 getButton.addEventListener("click", function() {
     perspective();
     checkButton();

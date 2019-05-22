@@ -16,6 +16,8 @@ h1 {
     letter-spacing: .06em;
     font-weight: 500;
     z-index: 2;
+    color: black;
+    transition-duration: 1s;
 }
 
 main {
@@ -27,14 +29,16 @@ main {
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
+    bottom: 10px;
     transition-duration: 1s;
+    transform: scale(1) perspective(0) rotateX(0) rotateY(0) rotateZ(0);
 }
 
 .main-animated {
     transform: scale(0.90) perspective(1800px) rotateX(20deg) rotateY(-15deg) rotateZ(5deg);
     box-shadow: 12px 26px 15px 10px rgba(0,0,0,.2), 12px 26px 5px rgba(0,0,0,.2);
-    top: -40px;
+/*    top: -40px;*/
+    bottom: 40px;
 }
 
 .bovenkant {
@@ -55,36 +59,39 @@ main {
 }
 
 .binnenkant {
+    position: absolute;
     background-color: #7a6a4f;
     height: 0px;
-    margin: 0px;
-    transform: perspective(1800px) rotateX(0deg);
+    width: 694px;
+    transform: skewX(20deg) rotateX(-50deg);
     transition-duration: 1s;
+    bottom: 4px;
+    left: 4px;
 }
 
 .binnenkant-animated {
-    height: 30px;
-    margin: -6px -4px 0px 6px;
-    transform: skewX(20deg) rotateX(-50deg);
+    height: 26px;
+    bottom: -23px;
+    width:700px;
+    left: 4;
 }
 
 .binnenkant-2 {
-    right: 0px;
+    right: 2px;
     top: 0px;
     position: absolute;
     background-color: #c6b8a1;
     height: 100%;
     width: 0px;
     margin: 0px;
-    transform: skewy(0deg);
+    transform: skewy(71deg);
     transition-duration: 1s;
 }
 
 .binnenkant-2-animated {
     right: -7px;
-    top: 9px;
+    top: 8px;
     width: 7px;
-    transform: skewY(72deg);
 }
 
 .onderkant {
@@ -113,7 +120,7 @@ main {
     left: 0px;
     bottom: 0px;
     height: 0px;
-    width: 3.5px;
+    width: 2.5px;
     background-color: #d62019;
     transform: skewX(0deg);
     filter: brightness(70%);
@@ -138,19 +145,25 @@ button.perspective {
     width: 40px;
     height: 40px;
     padding: 0;
-    margin-top: -20px;
+/*    margin-top: -20px;*/
+    z-index: 4;
 }
 
 .theme {
     display: flex;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-left: 0px;
     transition-duration: 1s;
+    z-index: 4;
+    width: 200px;
+    height: 40px;
+    box-shadow: 0px 0px 0px rgba(0,0,0,.4);
 }
 
 .theme-animated {
-    margin-top: 25px;
-    margin-left: 10px;
+    margin-top: 40px;
+    margin-left: 5px;
+    box-shadow: 12px 10px 25px rgba(0,0,0,.2), 12px 10px 15px rgba(0,0,0,.4);
 }
 
 .theme input {
@@ -164,7 +177,7 @@ button.perspective {
     display: block;
     width: 40px;
     height: 40px;
-    margin-top: -43px;
+    margin-top: -23px;
 }
 
 .theme label:nth-of-type(1) span {

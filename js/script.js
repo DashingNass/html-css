@@ -286,4 +286,8 @@ getTheme.addEventListener("click", function() {
     cardColor();
 });
 
-getGrid.addEventListener("click", cardColor);
+getGrid.addEventListener("click", function() {
+    cardColor();
+    checkCard();
+    toggleCard();
+});

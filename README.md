@@ -15,7 +15,10 @@ De schetsen heb ik zo nauwkeurig mogelijk nagetekend in Illustrator. Vervolgens 
 #### Thema's
 Het boek heeft verschillende kleur-variaties en dit wilde ik graag meenemen in het product. Dit heb gedaan door radio buttons aan de onderkant te plaatsen om de gebruiker de optie te geven om van thema te wisselen. De radio buttons wilde ik graag zelf stylen, maar standaard is dat niet mogelijk, dus heb ik een span bij de input aangemaakt en die vervolgens in een label geplaatst. Alles wat in de label geplaatst wordt is klikbaar, dus ook de span. De span heb ik gestyled als een knop en de radio button verborgen.
 
+#### Animatie
+##### De schetsen
 
+##### Het boek
 
 ### Bronnen
 

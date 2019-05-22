@@ -1,8 +1,7 @@
 ## Le Corbusier
 
-You can use the [editor on GitHub](https://github.com/batuhanarican/html-css/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Live preview:
+https://batuhanarican.github.io/html-css/
 
 ### Markdown
 
@@ -32,6 +31,9 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/batuhanarican/html-css/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+### Bronnen
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+https://css-tricks.com/almanac/properties/t/transform/
+https://www.w3schools.com/jsref/prop_radio_checked.asp
+https://stackoverflow.com/questions/18522864/disable-scroll-down-when-spacebar-is-pressed-on-firefox
+https://keycode.info/

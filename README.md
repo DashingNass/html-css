@@ -5,7 +5,9 @@ https://batuhanarican.github.io/html-css/
 
 ### Het concept
 
-![Le_Corbusier](https://github.com/batuhanarican/html-css/blob/master/img/img1.jpg){:width="200px"} ![Le_Corbusier](https://github.com/batuhanarican/html-css/blob/master/img/img2.jpg){:width="200px"}
+
+<img src="https://github.com/batuhanarican/html-css/blob/master/img/img1.jpg" width="100">
+![Le_Corbusier](https://github.com/batuhanarican/html-css/blob/master/img/img1.jpg) ![Le_Corbusier](https://github.com/batuhanarican/html-css/blob/master/img/img2.jpg)
 
 Voor deze opdracht heb ik ervoor gekozen om het boek "Le Corbusier" om te zetten in een interactieve website. De kaft van het boek bevat simpele schetsen van vier moderne gebouwen waar notities bij staan. Het leek mij interessant om een keer niet met abstracte vormen te werken. Ook had het boek verschillende kleuren kaften waar ik ook graag iets mee wilde doen.
 

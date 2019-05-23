@@ -35,10 +35,10 @@ Omdat de input voor 2D/3D weergave gebruik maakt van spatie, ontstonden er probl
 
 ### Bronnen
 
-https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
-https://www.w3schools.com/jsref/prop_radio_checked.asp
-https://css-tricks.com/svg-line-animation-works/
-https://css-tricks.com/almanac/properties/t/transform/
-https://stackoverflow.com/questions/18522864/disable-scroll-down-when-spacebar-is-pressed-on-firefox
-https://keycode.info/
-https://developer.mozilla.org/nl/docs/Web/CSS/cursor
+- https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+- https://www.w3schools.com/jsref/prop_radio_checked.asp
+- https://css-tricks.com/svg-line-animation-works/
+- https://css-tricks.com/almanac/properties/t/transform/
+- https://stackoverflow.com/questions/18522864/disable-scroll-down-when-spacebar-is-pressed-on-firefox
+- https://keycode.info/
+- https://developer.mozilla.org/nl/docs/Web/CSS/cursor

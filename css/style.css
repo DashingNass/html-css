@@ -147,6 +147,7 @@ button.perspective {
     padding: 0;
 /*    margin-top: -20px;*/
     z-index: 4;
+    cursor: pointer;
 }
 
 .theme {
@@ -178,6 +179,7 @@ button.perspective {
     width: 40px;
     height: 40px;
     margin-top: -23px;
+    cursor: pointer;
 }
 
 .theme label:nth-of-type(1) span {
@@ -321,6 +323,14 @@ main div.grid {
 }
 
 /*CARDS*/
+
+.card {
+    cursor: zoom-in;
+}
+
+.grid .container input:checked ~ .card {
+    cursor: zoom-out;
+}
 
 .card .schets {
     z-index: 3;

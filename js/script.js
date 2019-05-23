@@ -37,6 +37,7 @@ function perspective() {
     getOnderkant.classList.toggle("onderkant-animated");
     getRug.classList.toggle("rug-animated");
     getTheme.classList.toggle("theme-animated");
+    
     for (var i=0; i < getCard.length; i++) {
         getCard[i].classList.toggle("card-animated");
     }
@@ -218,6 +219,7 @@ function cardColor() {
     }
 }
 
+//Remove default space
 window.onkeydown = function(e) { 
   return !(e.keyCode == 32);
 };

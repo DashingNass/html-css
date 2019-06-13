@@ -442,4 +442,7 @@ main div.grid {
         margin-top: 70px;
         margin-left: 160px;
     }
+    .theme span {
+        margin-top: -22px;
+    }
 }

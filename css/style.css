@@ -446,3 +446,23 @@ main div.grid {
         margin-left: 90px;
     }
 }
+
+@media screen {
+    main {
+        transform: scale(.50) perspective(0) rotateX(0) rotateY(0) rotateZ(0);
+/*        left: -160px;*/
+        border: 5px solid blue;
+    }
+    .main-animated {
+        transform: scale(0.50) perspective(1800px) rotateX(20deg) rotateY(-15deg) rotateZ(5deg);
+    }
+    .theme {
+        transform: scale(1.8);
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+    .theme-animated {
+        margin-top: 60px;
+        margin-left: 90px;
+    }
+}

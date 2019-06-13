@@ -17,7 +17,7 @@ Voor deze opdracht heb ik ervoor gekozen om het boek "Le Corbusier" om te zetten
 De schetsen heb ik zo nauwkeurig mogelijk nagetekend in Illustrator. Vervolgens heb ik deze opgesplitst in verschillende delen en geëxporteerd als SVG code en in mijn HTML gezet. Om alle onderdelen goed uit te lijnen heb ik gebruik gemaakt van een grid.
 
 ### Thema's
-Het boek heeft verschillende kleur-variaties en dit wilde ik graag meenemen in het product. Dit heb gedaan door radio buttons aan de onderkant te plaatsen om de gebruiker de optie te geven om van thema te wisselen. De radio buttons wilde ik graag zelf stylen, maar standaard is dat niet mogelijk, dus heb ik een span bij de input aangemaakt en die vervolgens in een label geplaatst. Alles wat in de label geplaatst wordt is klikbaar, dus ook de span. De span heb ik gestyled als een knop en de radio button verborgen.
+Het boek heeft verschillende kleur-variaties en dit wilde ik graag meenemen in het project. Dit heb ik gedaan door radio buttons aan de onderkant te plaatsen om de gebruiker de optie te geven om van thema te wisselen. De radio buttons wilde ik graag zelf stylen, maar standaard is dat niet mogelijk, dus heb ik een span bij de input aangemaakt en die vervolgens in een label geplaatst. Alles wat in de label geplaatst wordt is klikbaar, dus ook de span. De span heb ik gestyled als een knop en de radio button verborgen.
 
 Om de kleuren van het boek en de schetsen aan te passen heb ik gebruik gemaakt van javascript die styling toevoegt aan de betreffende onderdelen.
 

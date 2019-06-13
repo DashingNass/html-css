@@ -425,7 +425,7 @@ main div.grid {
 
 @media screen and (max-width:500px) {
     main {
-        transform: scale(.50) perspective(0) rotateX(0) rotateY(0) rotateZ(0);
+        transform: scale(.30) perspective(0) rotateX(0) rotateY(0) rotateZ(0);
 /*        left: -160px;*/
     }
     .main-animated {

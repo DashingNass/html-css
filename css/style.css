@@ -434,12 +434,12 @@ main div.grid {
         left: -70px;
     }
     .theme {
-        transform: scale(2.5);
-        margin-top: 50px;
-        margin-left: 150px;
+        transform: scale(3.5);
+        margin-top: 80px;
+        margin-left: 250px;
     }
     .theme-animated {
-        margin-top: 70px;
-        margin-left: 160px;
+        margin-top: 100px;
+        margin-left: 260px;
     }
 }

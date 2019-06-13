@@ -373,3 +373,71 @@ main div.grid {
     height: 0;
     width: 0;
 }
+
+@media screen and (max-width:760px) {
+    main {
+        transform: scale(.80) perspective(0) rotateX(0) rotateY(0) rotateZ(0);
+        left: -10px;
+    }
+    .main-animated {
+        transform: scale(0.75) perspective(1800px) rotateX(20deg) rotateY(-15deg) rotateZ(5deg);
+    }
+    .theme {
+        transform: scale(1.2);
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:635px) {
+    main {
+        transform: scale(.70) perspective(0) rotateX(0) rotateY(0) rotateZ(0);
+        left: -50px;
+    }
+    .main-animated {
+        transform: scale(0.65) perspective(1800px) rotateX(20deg) rotateY(-15deg) rotateZ(5deg);
+    }
+    .theme {
+        transform: scale(1.4);
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width:590px) {
+    main {
+        transform: scale(.67) perspective(0) rotateX(0) rotateY(0) rotateZ(0);
+        margin-left: -90px;
+    }
+    .main-animated {
+        transform: scale(0.60) perspective(1800px) rotateX(20deg) rotateY(-15deg) rotateZ(5deg);
+    }
+    .theme {
+        transform: scale(1.8);
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+    .theme-animated {
+        margin-top: 60px;
+        margin-left: 90px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    main {
+        transform: scale(.50) perspective(0) rotateX(0) rotateY(0) rotateZ(0);
+/*        left: -160px;*/
+    }
+    .main-animated {
+        transform: scale(0.50) perspective(1800px) rotateX(20deg) rotateY(-15deg) rotateZ(5deg);
+    }
+    .theme {
+        transform: scale(1.8);
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+    .theme-animated {
+        margin-top: 60px;
+        margin-left: 90px;
+    }
+}
